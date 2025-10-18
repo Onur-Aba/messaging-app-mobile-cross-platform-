@@ -36,8 +36,8 @@ Both projects share the same backend and real-time infrastructure powered by **F
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/Onur-Aba/messaging-app-mobile-cross-platform-.git
+cd messaging-app-mobile-cross-platform-
 ```
 2. Install dependencies
 

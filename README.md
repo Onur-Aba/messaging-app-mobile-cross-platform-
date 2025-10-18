@@ -108,3 +108,22 @@ Enable Authentication, Realtime Database, and Storage in the Firebase Console.
 
 ## 🌐 Related Projects
 💻 Desktop Version:[ Onur-Aba/messaging-app-desktop](https://github.com/Onur-Aba/messaging-app-desktop)#
+
+
+## ⚠️ Firebase Rules
+
+For testing purposes only, you can temporarily allow all reads and writes by using:
+
+```bash
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+```
+
+⚠️ Warning: Never leave these rules in production.
+This setting makes your entire Firestore database publicly accessible.
